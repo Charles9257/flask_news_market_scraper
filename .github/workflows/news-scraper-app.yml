@@ -1,18 +1,22 @@
+name: Python Flask News Scraper CI
+
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:17
+        image: postgres:14
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: 9257postgres
+          POSTGRES_PASSWORD: password
           POSTGRES_DB: newsdb
         ports:
           - 5432:5432
@@ -23,7 +27,7 @@ jobs:
           --health-retries=5
 
     env:
-      DATABASE_URL: postgresql://postgres:9257postgres@localhost:5432/newsdb
+      DATABASE_URL: postgresql://postgres:password@localhost:5432/newsdb
 
     steps:
     - name: Checkout code
