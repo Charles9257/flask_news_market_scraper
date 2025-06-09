@@ -4,6 +4,9 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import unittest
 from app import create_app
+from app.config import TestConfig
+
+app = create_app(config_class=TestConfig)
 
 class MainRoutesTestCase(unittest.TestCase):
     def setUp(self):
