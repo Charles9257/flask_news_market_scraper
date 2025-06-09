@@ -1,0 +1,79 @@
+[2025-06-09 01:10:02,460] INFO in routes: GET / called
+[2025-06-09 01:10:02,473] INFO in routes: Fetched 0 articles for index
+[2025-06-09 01:10:02,475] ERROR in routes: Error fetching articles for index: index.html
+Traceback (most recent call last):
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\app\main\routes.py", line 20, in index
+    return render_template('index.html', articles=articles)
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2025-06-09 01:13:00,078] INFO in routes: GET / called
+[2025-06-09 01:13:00,083] INFO in routes: Fetched 0 articles for index
+[2025-06-09 01:13:00,084] ERROR in routes: Error fetching articles for index: index.html
+Traceback (most recent call last):
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\app\main\routes.py", line 20, in index
+    return render_template('index.html', articles=articles)
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2025-06-09 01:13:06,542] INFO in routes: GET / called
+[2025-06-09 01:13:06,547] INFO in routes: Fetched 0 articles for index
+[2025-06-09 01:13:06,548] ERROR in routes: Error fetching articles for index: index.html
+Traceback (most recent call last):
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\app\main\routes.py", line 20, in index
+    return render_template('index.html', articles=articles)
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Desktop\Bolton University\flask_news_market_scapper\env\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2025-06-09 01:16:09,975] INFO in routes: GET / called
+[2025-06-09 01:16:09,979] INFO in routes: Fetched 0 articles for index
+[2025-06-09 01:17:31,890] INFO in routes: GET / called
+[2025-06-09 01:17:31,911] INFO in routes: Fetched 0 articles for index

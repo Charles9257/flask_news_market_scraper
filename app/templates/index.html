@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Ugwute Ogbonna - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #222;
+        }
+        header {
+            background: #1a237e;
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffb300;
+        }
+        .contain {
+            display: flex;
+            max-width: 1200px;
+            margin: 2rem auto;
+            gap: 2rem;
+        }
+        aside {
+            flex: 1;
+            background: #fff;
+            padding: 2rem 1rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            min-width: 220px;
+        }
+        main {
+            flex: 3;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #1a237e;
+        }
+        .aside-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .contact-info, .skills {
+            margin-bottom: 1.5rem;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background: #e3e6f0;
+            margin-bottom: 0.5rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.98rem;
+        }
+        h1 {
+            margin-top: 0;
+            color: #1a237e;
+        }
+        .section-title {
+            color: #3949ab;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #e3e6f0;
+            display: inline-block;
+            padding-bottom: 0.2rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: #f8fafc;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #1a237e;
+        }
+        footer {
+            background: #1a237e;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 900px) {
+            .contain{
+                flex-direction: column;
+                gap: 1rem;
+            }
+            aside, main {
+                min-width: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="home text-left">Charles</a>
+            <a href="about">About</a>
+            <a href="projects">Projects</a>
+            <a href="skills">Skills</a>
+            <a href="contact">Contact</a>
+            <a href="education">Education</a>
+            <a href="profile">Profile</a>
+            <a href="services">Services</a>
+        </nav>
+    </header>
+    <div class="contain">
+        <aside>
+            <img src="static/images/profileC.png" alt="Charles Ugwute Ogbonna" class="profile-img">
+            <div class="aside-title">Charles Ugwute Ogbonna</div>
+            <div class="contact-info">
+                <strong>Email:</strong><br>
+                charles.ogbonna@email.com<br>
+                <strong>Location:</strong><br>
+                Bolton, UK
+            </div>
+            <div class="skills" id="skills">
+                <div class="aside-title">Skills</div>
+                <ul>
+                    <li>Python &amp; Flask</li>
+                    <li>Django</li>
+                    <li>JavaScript</li>
+                    <li>HTML &amp; CSS</li>
+                    <li>SQL &amp; Databases</li>
+                    <li>REST APIs</li>
+                    <li>Git &amp; GitHub</li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/" target="_blank">GitHub</a>
+            </div>
+        </aside>
+        <main>
+            <section id="about">
+                <h1>Charles Ugwute Ogbonna</h1>
+                <p>
+                    I am a passionate software developer specializing in Python, Flask, and Django. With a strong background in web development and a keen eye for detail, I build robust, scalable, and user-friendly applications. I am committed to continuous learning and delivering high-quality solutions for clients and employers.
+                </p>
+            </section>
+            <section id="projects">
+                <div class="section-title">Featured Projects</div>
+                <div class="projects">
+                    <div class="project-card">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio site built with Flask, showcasing my skills, projects, and experience.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Task Manager App</h3>
+                        <p>A full-stack web application for managing daily tasks, built with Django and React.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>RESTful API for E-commerce</h3>
+                        <p>Designed and implemented a RESTful API backend for an e-commerce platform using Django REST Framework.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="section-title">Contact Me</div>
+                <p>
+                    Interested in working together or have a question? Feel free to <a href="mailto:charles.ogbonna@email.com">email me</a> or connect via LinkedIn.
+                </p>
+            </section>
+        </main>
+    </div>
+    <footer>
+         
+        &copy; {{ year|default(2024) }} Charles Ugwute Ogbonna. All rights reserved.
+
+    </footer>
+</body>
+</html>

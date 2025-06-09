@@ -1,0 +1,26 @@
+[2025-06-09 01:19:33,237] INFO in routes: GET / called
+[2025-06-09 01:19:33,249] INFO in routes: Fetched 0 articles for index
+[2025-06-09 01:34:22,424] INFO in routes: GET / called
+[2025-06-09 01:34:22,438] INFO in routes: Fetched 0 articles for index
+[2025-06-09 01:35:35,700] INFO in routes: GET / called
+[2025-06-09 01:35:35,703] INFO in routes: Fetched 0 articles for index
+[2025-06-09 01:45:08,028] INFO in routes: GET /about called
+[2025-06-09 01:45:08,117] INFO in routes: GET / called
+[2025-06-09 01:45:08,123] INFO in routes: Fetched 0 articles for index
+[2025-06-09 01:56:13,482] INFO in routes: GET /about called
+[2025-06-09 02:04:42,010] INFO in routes: GET / called
+[2025-06-09 02:04:42,015] INFO in routes: Fetched 0 articles for index
+[2025-06-09 02:04:42,166] INFO in routes: GET /about called
+[2025-06-09 02:04:42,245] INFO in routes: GET /about called
+[2025-06-09 02:05:34,321] INFO in routes: GET / called
+[2025-06-09 02:05:34,327] INFO in routes: Fetched 0 articles for index
+[2025-06-09 02:05:34,494] INFO in routes: GET /about called
+[2025-06-09 02:05:34,565] INFO in routes: GET /about called
+[2025-06-09 02:05:34,643] INFO in routes: GET / called
+[2025-06-09 02:05:34,649] INFO in routes: Fetched 0 articles for index
+[2025-06-09 02:06:25,553] INFO in routes: GET / called
+[2025-06-09 02:06:25,559] INFO in routes: Fetched 0 articles for index
+[2025-06-09 02:06:25,640] INFO in routes: GET /about called
+[2025-06-09 02:06:25,761] INFO in routes: GET /about called
+[2025-06-09 02:06:25,836] INFO in routes: GET / called
+[2025-06-09 02:06:25,839] INFO in routes: Fetched 0 articles for index
