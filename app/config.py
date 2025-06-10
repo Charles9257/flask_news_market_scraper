@@ -8,6 +8,10 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = os.environ.get("SECRET_KEY", "default-secret")
 
+#class TestConfig(Config):
+    #TESTING = True
+    #SQLALCHEMY_DATABASE_URI = "sqlite:///:memory:"  # Use in-memory DB for tests
 class TestConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql://test_user:test_password@localhost:5432/test_db'
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = "sqlite:///:memory:"  # Use in-memory DB for tests
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
