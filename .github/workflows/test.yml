@@ -34,6 +34,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Install psycopg2
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libpq-dev
+        pip install psycopg2-binary
     - name: Wait for Postgres to be ready
       run: |
         for i in {1..10}; do
@@ -41,12 +46,12 @@ jobs:
           echo "Waiting for postgres..."
           sleep 3
         done
-        pg_isready -h localhost -p 5432 -U te
-        st_user
-
+        pg_isready -h localhost -p 5432 -U test_user
+ 
     - name: Run tests
       env:
         PYTHONPATH: "${{ github.workspace }}"
         DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_db
+        
       run: |
         pytest tests/
