@@ -15,6 +15,11 @@ jobs:
           POSTGRES_USER: test_user
           POSTGRES_PASSWORD: test_password
           POSTGRES_DB: test_db
+        options: >-
+          --health-cmd="pg_isready -U test_user"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
 
     steps:
     - uses: actions/checkout@v3
@@ -29,9 +34,19 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Wait for Postgres to be ready
+      run: |
+        for i in {1..10}; do
+          pg_isready -h localhost -p 5432 -U test_user && break
+          echo "Waiting for postgres..."
+          sleep 3
+        done
+        pg_isready -h localhost -p 5432 -U te
+        st_user
+
     - name: Run tests
       env:
         PYTHONPATH: "${{ github.workspace }}"
-        DATABASE_URL: postgres://test_user:test_password@localhost:5432/test_db
+        DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_db
       run: |
         pytest tests/
